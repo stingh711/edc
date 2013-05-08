@@ -6,7 +6,7 @@
 
 <struts>
     <constant name="struts.devMode" value="true"/>
-    <constant name="struts.ui.theme" value="css_xhtml"/>
+    <constant name="struts.ui.theme" value="bootstrap"/>
 
     <package name="member" extends="struts-default">
         <action name="toLogin" class="com.unimedsci.edc.web.frontend.action.member.MemberAction" method="toLogin">

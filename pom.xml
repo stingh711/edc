@@ -10,6 +10,7 @@
     <modules>
         <module>edc-core</module>
         <module>edc-web-frontend</module>
+        <module>edc-web-backend</module>
     </modules>
     <packaging>pom</packaging>
 
