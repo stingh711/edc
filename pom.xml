@@ -11,6 +11,7 @@
         <module>edc-core</module>
         <module>edc-web-frontend</module>
         <module>edc-web-backend</module>
+        <module>edc-web-common</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -19,6 +20,7 @@
         <mybatis.version>3.2.2</mybatis.version>
         <struts2.version>2.3.14</struts2.version>
         <logback.version>1.0.11</logback.version>
+        <hibernate.version>4.1.9.Final</hibernate.version>
     </properties>
 
     <dependencyManagement>
@@ -32,6 +34,24 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-web</artifactId>
+                <version>${springframework.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-tx</artifactId>
+                <version>${springframework.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${springframework.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-orm</artifactId>
                 <version>${springframework.version}</version>
                 <scope>compile</scope>
             </dependency>
@@ -84,6 +104,12 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     
